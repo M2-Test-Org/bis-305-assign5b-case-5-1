@@ -25,7 +25,7 @@ public class TestAssign52Case5_1
         //Use case 1
         var lastYearInput = "6";
         var thisYearInput = "31";
-        var correctedThisYear = "14";
+        var correctedThisYear = "30";
         //separte multiple inputs with a new line break
         var input = new StringReader(lastYearInput + Environment.NewLine + thisYearInput + Environment.NewLine + correctedThisYear);
         Console.SetIn(input);
@@ -39,7 +39,7 @@ public class TestAssign52Case5_1
         expectedOutcome.AppendLine("Number must be between 0 and 30");
         expectedOutcome.Append("Enter number of contestants this year >> ");
         expectedOutcome.AppendLine(string.Format("Last year's competition had {0} contestants, and this year's has {1} contestants",lastYearInput,correctedThisYear));
-        expectedOutcome.AppendLine("Revenue expected this year is $350.00");
+        expectedOutcome.AppendLine("Revenue expected this year is $750.00");
         expectedOutcome.AppendLine("The competition is more than twice as big this year!");   
 
         Assert.Equal(expectedOutcome.ToString(), output.ToString());
